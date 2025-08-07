@@ -35,6 +35,24 @@ export default function Home() {
               </div>
             </div>
             
+            {/* 저작권 보호 및 불법 사용 금지 */}
+            <div className="bg-orange-50 border-2 border-orange-200 rounded-lg p-6 mb-12">
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-orange-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                </svg>
+                <div className="text-orange-800">
+                  <h3 className="font-bold text-lg mb-2">⚠️ 저작권 보호 및 불법 사용 금지</h3>
+                  <ul className="text-sm space-y-1 font-medium">
+                    <li>• 본 사이트의 디자인, 코드, 콘텐츠는 저작권으로 보호됩니다</li>
+                    <li>• 무단 복제, 배포, 상업적 이용을 엄격히 금지합니다</li>
+                    <li>• 허가 없는 재사용 시 법적 조치를 받을 수 있습니다</li>
+                    <li>• 학습 목적의 사용을 금지합니다</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
               마케팅 
               <br />
