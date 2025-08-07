@@ -30,17 +30,17 @@ export default function Home() {
                 <span className="text-white font-bold text-2xl">SM</span>
               </div>
               <div className="text-left">
-                <h1 className="text-3xl font-bold text-slate-800">스타쉽 마케팅</h1>
-                <p className="text-slate-600 text-sm font-medium mt-1">그룹</p>
+                <h1 className="text-3xl font-bold text-slate-900">스타쉽 마케팅</h1>
+                <p className="text-slate-800 text-sm font-medium mt-1">그룹</p>
               </div>
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
               마케팅 
               <br />
-              <span className="text-slate-600">전문가들</span>
+              <span className="text-slate-800">전문가들</span>
             </h2>
-            <p className="text-lg text-slate-700 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-slate-800 mb-12 max-w-3xl mx-auto leading-relaxed">
               글로벌 마케팅 리더십을 구축하는 스타쉽 마케팅 그룹에서 
               <br className="hidden md:block" />
               혁신적이고 창의적인 마케팅 전문가를 모집합니다.
@@ -76,9 +76,9 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-slate-800 mb-3">브랜드</h3>
-            <h4 className="text-base font-semibold text-orange-500 mb-2">브랜드 마케팅</h4>
-            <p className="text-slate-600 leading-relaxed">전략적 브랜드 포지셔닝, CI/BI 개발, 글로벌 캠페인 기획을 통한 브랜드 가치 극대화</p>
+            <h3 className="text-xl font-bold text-slate-900 mb-3">브랜드</h3>
+            <h4 className="text-base font-semibold text-orange-600 mb-2">브랜드 마케팅</h4>
+            <p className="text-slate-800 leading-relaxed">전략적 브랜드 포지셔닝, CI/BI 개발, 글로벌 캠페인 기획을 통한 브랜드 가치 극대화</p>
           </div>
 
           <div className="bg-slate-50 p-6 hover:bg-blue-50 transition-all duration-300 group border-l border-r border-slate-200">
@@ -87,9 +87,9 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-slate-800 mb-3">디지털</h3>
-            <h4 className="text-base font-semibold text-green-500 mb-2">디지털 마케팅</h4>
-            <p className="text-slate-600 leading-relaxed">퍼포먼스 마케팅, SNS 전략, 검색광고, 콘텐츠 마케팅 등 디지털 채널 전문가</p>
+            <h3 className="text-xl font-bold text-slate-900 mb-3">디지털</h3>
+            <h4 className="text-base font-semibold text-green-600 mb-2">디지털 마케팅</h4>
+            <p className="text-slate-800 leading-relaxed">퍼포먼스 마케팅, SNS 전략, 검색광고, 콘텐츠 마케팅 등 디지털 채널 전문가</p>
           </div>
 
           <div className="bg-slate-50 p-6 hover:bg-blue-50 transition-all duration-300 group">
@@ -98,9 +98,9 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-slate-800 mb-3">분석</h3>
-            <h4 className="text-base font-semibold text-purple-500 mb-2">마케팅 애널리틱스</h4>
-            <p className="text-slate-600 leading-relaxed">데이터 분석 기반 ROI 최적화, 고객 인사이트 발굴, KPI 성과 관리 전문가</p>
+            <h3 className="text-xl font-bold text-slate-900 mb-3">분석</h3>
+            <h4 className="text-base font-semibold text-purple-600 mb-2">마케팅 애널리틱스</h4>
+            <p className="text-slate-800 leading-relaxed">데이터 분석 기반 ROI 최적화, 고객 인사이트 발굴, KPI 성과 관리 전문가</p>
           </div>
         </div>
 

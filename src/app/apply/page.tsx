@@ -351,8 +351,8 @@ export default function ApplyPage() {
                     <span className="text-white font-bold text-lg">SM</span>
                   </div>
                   <div>
-                    <h1 className="text-2xl font-bold text-slate-800">스타쉽 마케팅</h1>
-                    <p className="text-slate-600 text-sm font-medium mt-1">지원서 (테스트)</p>
+                    <h1 className="text-2xl font-bold text-slate-900">스타쉽 마케팅</h1>
+                    <p className="text-slate-800 text-sm font-medium mt-1">지원서 (테스트)</p>
                   </div>
                 </div>
                 <div className="text-right">
@@ -368,8 +368,8 @@ export default function ApplyPage() {
                     {/* 지원 포지션 안내 */}
             <div className="bg-white border border-slate-200 rounded-lg p-8 mb-12 shadow-lg">
               <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-slate-800 mb-3">마케팅 직무</h2>
-                <p className="text-slate-600 text-base">스타쉽 마케팅 그룹 전문가 채용</p>
+                <h2 className="text-3xl font-bold text-slate-900 mb-3">마케팅 직무</h2>
+                <p className="text-slate-800 text-base">스타쉽 마케팅 그룹 전문가 채용</p>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 rounded-lg overflow-hidden border border-slate-200">
@@ -377,22 +377,22 @@ export default function ApplyPage() {
                   <div className="w-10 h-10 bg-gradient-to-b from-orange-400 to-red-500 rounded-lg flex items-center justify-center mb-4 shadow-md">
                     <span className="text-white font-semibold">브</span>
                   </div>
-                  <h3 className="text-lg font-bold text-slate-800 mb-2">브랜드</h3>
-                  <p className="text-slate-600 text-sm">브랜드 전략 및 캠페인 기획</p>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">브랜드</h3>
+                  <p className="text-slate-800 text-sm">브랜드 전략 및 캠페인 기획</p>
                 </div>
                 <div className="bg-slate-50 p-6 hover:bg-blue-50 transition-all group border-l border-r border-slate-200">
                   <div className="w-10 h-10 bg-gradient-to-b from-green-400 to-emerald-500 rounded-lg flex items-center justify-center mb-4 shadow-md">
                     <span className="text-white font-semibold">디</span>
                   </div>
-                  <h3 className="text-lg font-bold text-slate-800 mb-2">디지털</h3>
-                  <p className="text-slate-600 text-sm">퍼포먼스/SNS/검색 마케팅</p>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">디지털</h3>
+                  <p className="text-slate-800 text-sm">퍼포먼스/SNS/검색 마케팅</p>
                 </div>
                 <div className="bg-slate-50 p-6 hover:bg-blue-50 transition-all group">
                   <div className="w-10 h-10 bg-gradient-to-b from-purple-400 to-indigo-500 rounded-lg flex items-center justify-center mb-4 shadow-md">
                     <span className="text-white font-semibold">분</span>
                   </div>
-                  <h3 className="text-lg font-bold text-slate-800 mb-2">분석</h3>
-                  <p className="text-slate-600 text-sm">데이터 분석 및 ROI 최적화</p>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">분석</h3>
+                  <p className="text-slate-800 text-sm">데이터 분석 및 ROI 최적화</p>
                 </div>
               </div>
             </div>
@@ -400,7 +400,7 @@ export default function ApplyPage() {
                     <form onSubmit={handleSubmit} className="bg-white shadow-lg border border-slate-200 rounded-lg p-8">
               {/* 지원 분야 선택 */}
               <section className="mb-12">
-                <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+                <div className="bg-blue-50 text-slate-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
                   <h2 className="text-xl font-bold mb-1">01. 지원 분야 선택</h2>
                   <p className="text-slate-300">지원 분야 선택 <span className="text-red-400">*</span></p>
                 </div>
@@ -415,7 +415,7 @@ export default function ApplyPage() {
                       className="sr-only"
                       required
                     />
-                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-blue-100 has-[:checked]:text-blue-900 transition-all duration-300">
+                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-blue-100 has-[:checked]:text-slate-900 transition-all duration-300">
                       <div className="flex items-center mb-3">
                         <div className="w-10 h-10 bg-gradient-to-b from-orange-400 to-red-500 rounded-lg flex items-center justify-center mr-3 shadow-md">
                           <span className="text-white font-semibold">브</span>
@@ -436,7 +436,7 @@ export default function ApplyPage() {
                       className="sr-only"
                       required
                     />
-                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-blue-100 has-[:checked]:text-blue-900 transition-all duration-300">
+                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-blue-100 has-[:checked]:text-slate-900 transition-all duration-300">
                       <div className="flex items-center mb-3">
                         <div className="w-10 h-10 bg-gradient-to-b from-green-400 to-emerald-500 rounded-lg flex items-center justify-center mr-3 shadow-md">
                           <span className="text-white font-semibold">디</span>
@@ -457,7 +457,7 @@ export default function ApplyPage() {
                       className="sr-only"
                       required
                     />
-                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-blue-100 has-[:checked]:text-blue-900 transition-all duration-300">
+                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-blue-100 has-[:checked]:text-slate-900 transition-all duration-300">
                       <div className="flex items-center mb-3">
                         <div className="w-10 h-10 bg-gradient-to-b from-purple-400 to-indigo-500 rounded-lg flex items-center justify-center mr-3 shadow-md">
                           <span className="text-white font-semibold">분</span>
@@ -473,7 +473,7 @@ export default function ApplyPage() {
 
           {/* 지원자 정보 */}
           <section className="mb-12">
-            <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+            <div className="bg-blue-50 text-slate-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
               <h2 className="text-xl font-bold mb-1">02. 개인 정보</h2>
               <p className="text-slate-300">지원자 개인정보</p>
             </div>
@@ -658,7 +658,7 @@ export default function ApplyPage() {
 
           {/* 학력사항 */}
           <section className="mb-16">
-            <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+            <div className="bg-blue-50 text-slate-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
               <h2 className="text-xl font-bold mb-1">03. 학력 사항</h2>
               <p className="text-slate-300 font-light">학력사항 <span className="text-red-400">*</span></p>
             </div>
@@ -903,7 +903,7 @@ export default function ApplyPage() {
 
           {/* 제출 서류 */}
           <section className="mb-16">
-            <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+            <div className="bg-blue-50 text-slate-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
               <h2 className="text-xl font-bold mb-1">05. 제출 서류</h2>
               <p className="text-slate-300 font-light">제출 서류</p>
             </div>
@@ -988,7 +988,7 @@ export default function ApplyPage() {
 
           {/* 자기소개서 */}
           <section className="mb-16">
-            <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+            <div className="bg-blue-50 text-slate-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
               <h2 className="text-xl font-bold mb-1">04. 자기소개서</h2>
               <p className="text-slate-300 font-light">마케팅 자기소개서 <span className="text-red-400">*</span></p>
             </div>
@@ -1047,7 +1047,7 @@ export default function ApplyPage() {
 
           {/* 지원 경로 */}
           <section className="mb-16">
-            <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+            <div className="bg-blue-50 text-slate-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
               <h2 className="text-xl font-bold mb-1">06. 지원 경로</h2>
               <p className="text-slate-300 font-light">지원 경로 <span className="text-red-400">*</span></p>
             </div>
@@ -1076,7 +1076,7 @@ export default function ApplyPage() {
 
           {/* 개인정보 동의 */}
           <section className="mb-16">
-            <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+            <div className="bg-blue-50 text-slate-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
               <h2 className="text-xl font-bold mb-1">07. 개인정보 동의</h2>
               <p className="text-slate-300 font-light">개인정보 처리 동의 (테스트용)</p>
             </div>
