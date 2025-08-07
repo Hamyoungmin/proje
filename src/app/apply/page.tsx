@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 
 interface FormData {
   // 기본 정보
@@ -141,7 +140,7 @@ export default function ApplyPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitResult, setSubmitResult] = useState<string | null>(null);
 
-  const handleInputChange = (field: keyof FormData, value: any) => {
+  const handleInputChange = (field: keyof FormData, value: FormData[keyof FormData]) => {
     setFormData(prev => ({
       ...prev,
       [field]: value
@@ -224,55 +223,13 @@ export default function ApplyPage() {
     }));
   };
 
-  const addActivity = () => {
-    setFormData(prev => ({
-      ...prev,
-      activities: [...prev.activities, {
-        type: '',
-        organization: '',
-        startDate: '',
-        endDate: '',
-        activityName: '',
-        description: ''
-      }]
-    }));
-  };
 
-  const addOverseasExperience = () => {
-    setFormData(prev => ({
-      ...prev,
-      overseasExperiences: [...prev.overseasExperiences, {
-        purpose: '',
-        country: '',
-        startDate: '',
-        endDate: '',
-        details: ''
-      }]
-    }));
-  };
 
-  const addLanguageScore = () => {
-    setFormData(prev => ({
-      ...prev,
-      languageScores: [...prev.languageScores, {
-        language: '',
-        testName: '',
-        acquisitionDate: '',
-        score: ''
-      }]
-    }));
-  };
 
-  const addCertificate = () => {
-    setFormData(prev => ({
-      ...prev,
-      certificates: [...prev.certificates, {
-        name: '',
-        issuer: '',
-        acquisitionDate: ''
-      }]
-    }));
-  };
+
+
+
+
 
   if (submitResult) {
     return (
@@ -429,7 +386,7 @@ export default function ApplyPage() {
                       type="radio"
                       name="marketingField"
                       value="brand"
-                      onChange={(e) => handleInputChange('applicationPath', 'brand-marketing')}
+                      onChange={() => handleInputChange('applicationPath', 'brand-marketing')}
                       className="sr-only"
                       required
                     />
@@ -450,7 +407,7 @@ export default function ApplyPage() {
                       type="radio"
                       name="marketingField"
                       value="digital"
-                      onChange={(e) => handleInputChange('applicationPath', 'digital-marketing')}
+                      onChange={() => handleInputChange('applicationPath', 'digital-marketing')}
                       className="sr-only"
                       required
                     />
@@ -471,7 +428,7 @@ export default function ApplyPage() {
                       type="radio"
                       name="marketingField"
                       value="analytics"
-                      onChange={(e) => handleInputChange('applicationPath', 'marketing-analytics')}
+                      onChange={() => handleInputChange('applicationPath', 'marketing-analytics')}
                       className="sr-only"
                       required
                     />

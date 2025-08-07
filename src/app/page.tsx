@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Link from "next/link";
 
 export default function Home() {
@@ -118,7 +118,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center mb-6">
                 <div className="bg-white p-4 rounded-lg border border-red-200 shadow-sm">
                   <div className="text-red-700 font-semibold text-base mb-2">가상 회사</div>
-                  <p className="text-red-600 text-sm">"스타쉽 마케팅"은 실제 회사가 아닙니다</p>
+                  <p className="text-red-600 text-sm">&ldquo;스타쉽 마케팅&rdquo;은 실제 회사가 아닙니다</p>
                 </div>
                 <div className="bg-white p-4 rounded-lg border border-red-200 shadow-sm">
                   <div className="text-red-700 font-semibold text-base mb-2">데모 목적</div>
