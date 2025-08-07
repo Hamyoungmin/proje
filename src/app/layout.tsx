@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "타이탄 마케팅 그룹 - 채용 (테스트 사이트)",
+  title: "스타쉽 마케팅 그룹 - 채용 (테스트 사이트)",
   description: "마케팅 전문가 채용 테스트 페이지 - 실제 채용이 아님, 데모 사이트입니다",
   robots: "noindex, nofollow", // 검색엔진 노출 방지
 };

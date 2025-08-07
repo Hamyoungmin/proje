@@ -276,7 +276,7 @@ export default function ApplyPage() {
 
   if (submitResult) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800 flex items-center justify-center relative">
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-slate-50 flex items-center justify-center relative">
         {/* 테스트 워터마크 */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 left-20 text-red-500/15 text-5xl font-light transform -rotate-45 tracking-wider">
@@ -285,12 +285,12 @@ export default function ApplyPage() {
           <div className="absolute bottom-20 right-20 text-red-500/15 text-5xl font-light transform rotate-45 tracking-wider">
             DEMO SITE
           </div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-red-500/8 text-7xl font-light tracking-widest">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-green-500/8 text-7xl font-light tracking-widest">
             SUCCESS
           </div>
         </div>
         
-        <div className="bg-white border-4 border-slate-300 p-16 shadow-2xl max-w-2xl w-full mx-4">
+        <div className="bg-white border-4 border-blue-200 p-16 shadow-2xl max-w-2xl w-full mx-4">
           <div className="text-center">
             <div className="mb-8">
               <svg className="mx-auto h-24 w-24 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1}>
@@ -305,12 +305,12 @@ export default function ApplyPage() {
             <div className="space-y-4">
               <button
                 onClick={() => setSubmitResult(null)}
-                className="w-full bg-slate-800 text-white px-6 py-3 font-bold hover:bg-slate-700 transition-colors border-2 border-slate-800 hover:border-slate-700 rounded-lg"
+                className="w-full bg-blue-600 text-white px-6 py-3 font-bold hover:bg-blue-700 transition-colors border-2 border-blue-600 hover:border-blue-700 rounded-lg"
               >
                 새 지원서 테스트
               </button>
               
-              <div className="bg-red-600 text-white p-4 border-2 border-red-700">
+              <div className="bg-red-100 text-red-800 p-4 border-2 border-red-200 rounded-lg">
                 <p className="font-bold text-sm">
                   ⚠️ DEMO REMINDER: 이것은 테스트 사이트이며 실제 채용이 아닙니다
                 </p>
@@ -323,7 +323,7 @@ export default function ApplyPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800 relative">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-slate-50 relative">
       {/* 테스트 사이트 워터마크 */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-20 text-red-500/8 text-3xl font-light transform -rotate-45 tracking-wider">
@@ -338,26 +338,26 @@ export default function ApplyPage() {
       </div>
 
       {/* 테스트 사이트 경고 배너 */}
-      <div className="bg-red-600 text-white py-2 px-6 text-center font-medium text-sm shadow-sm relative z-10 border-b border-red-700">
-        🚨 테스트 전용 사이트 - 타이탄 마케팅은 가상의 회사입니다 | 실제 데이터 수집 없음 🚨
+      <div className="bg-red-100 text-red-800 py-2 px-6 text-center font-medium text-sm shadow-sm relative z-10 border-b border-red-200">
+        🚨 테스트 전용 사이트 - 스타쉽 마케팅은 가상의 회사입니다 | 실제 데이터 수집 없음 🚨
       </div>
 
                 {/* 헤더 */}
-          <header className="bg-black/20 backdrop-blur-sm shadow-lg border-b border-white/10 relative z-10">
+          <header className="bg-white/80 backdrop-blur-sm shadow-lg border-b border-slate-200 relative z-10">
             <div className="max-w-6xl mx-auto px-6 py-8">
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gradient-to-b from-slate-100 to-slate-300 rounded-lg flex items-center justify-center mr-4 shadow-md">
-                    <span className="text-slate-800 font-bold text-lg">TM</span>
+                  <div className="w-12 h-12 bg-gradient-to-b from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mr-4 shadow-md">
+                    <span className="text-white font-bold text-lg">SM</span>
                   </div>
                   <div>
-                    <h1 className="text-2xl font-bold text-white">타이탄 마케팅</h1>
-                    <p className="text-slate-300 text-sm font-medium mt-1">지원서 (테스트)</p>
+                    <h1 className="text-2xl font-bold text-slate-800">스타쉽 마케팅</h1>
+                    <p className="text-slate-600 text-sm font-medium mt-1">지원서 (테스트)</p>
                   </div>
                 </div>
                 <div className="text-right">
-                  <div className="bg-red-500/80 border border-red-400 rounded px-3 py-1">
-                    <span className="text-red-100 text-sm font-semibold">데모</span>
+                  <div className="bg-red-100 border border-red-300 rounded px-3 py-1">
+                    <span className="text-red-700 text-sm font-semibold">데모</span>
                   </div>
                 </div>
               </div>
@@ -366,41 +366,41 @@ export default function ApplyPage() {
 
       <div className="max-w-6xl mx-auto px-6 py-16 relative z-10">
                     {/* 지원 포지션 안내 */}
-            <div className="bg-black/30 backdrop-blur-sm border border-white/20 rounded-lg p-8 mb-12 shadow-lg">
+            <div className="bg-white border border-slate-200 rounded-lg p-8 mb-12 shadow-lg">
               <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-white mb-3">마케팅 직무</h2>
-                <p className="text-slate-300 text-base">타이탄 마케팅 그룹 전문가 채용</p>
+                <h2 className="text-3xl font-bold text-slate-800 mb-3">마케팅 직무</h2>
+                <p className="text-slate-600 text-base">스타쉽 마케팅 그룹 전문가 채용</p>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 rounded-lg overflow-hidden border border-white/20">
-                <div className="bg-black/20 p-6 hover:bg-black/30 transition-all group">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 rounded-lg overflow-hidden border border-slate-200">
+                <div className="bg-slate-50 p-6 hover:bg-blue-50 transition-all group">
                   <div className="w-10 h-10 bg-gradient-to-b from-orange-400 to-red-500 rounded-lg flex items-center justify-center mb-4 shadow-md">
                     <span className="text-white font-semibold">브</span>
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-2">브랜드</h3>
-                  <p className="text-slate-400 text-sm">브랜드 전략 및 캠페인 기획</p>
+                  <h3 className="text-lg font-bold text-slate-800 mb-2">브랜드</h3>
+                  <p className="text-slate-600 text-sm">브랜드 전략 및 캠페인 기획</p>
                 </div>
-                <div className="bg-black/20 p-6 hover:bg-black/30 transition-all group border-l border-r border-white/10">
+                <div className="bg-slate-50 p-6 hover:bg-blue-50 transition-all group border-l border-r border-slate-200">
                   <div className="w-10 h-10 bg-gradient-to-b from-green-400 to-emerald-500 rounded-lg flex items-center justify-center mb-4 shadow-md">
                     <span className="text-white font-semibold">디</span>
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-2">디지털</h3>
-                  <p className="text-slate-400 text-sm">퍼포먼스/SNS/검색 마케팅</p>
+                  <h3 className="text-lg font-bold text-slate-800 mb-2">디지털</h3>
+                  <p className="text-slate-600 text-sm">퍼포먼스/SNS/검색 마케팅</p>
                 </div>
-                <div className="bg-black/20 p-6 hover:bg-black/30 transition-all group">
+                <div className="bg-slate-50 p-6 hover:bg-blue-50 transition-all group">
                   <div className="w-10 h-10 bg-gradient-to-b from-purple-400 to-indigo-500 rounded-lg flex items-center justify-center mb-4 shadow-md">
                     <span className="text-white font-semibold">분</span>
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-2">분석</h3>
-                  <p className="text-slate-400 text-sm">데이터 분석 및 ROI 최적화</p>
+                  <h3 className="text-lg font-bold text-slate-800 mb-2">분석</h3>
+                  <p className="text-slate-600 text-sm">데이터 분석 및 ROI 최적화</p>
                 </div>
               </div>
             </div>
 
-                    <form onSubmit={handleSubmit} className="bg-white/95 backdrop-blur-sm shadow-lg border border-white/30 rounded-lg p-8">
+                    <form onSubmit={handleSubmit} className="bg-white shadow-lg border border-slate-200 rounded-lg p-8">
               {/* 지원 분야 선택 */}
               <section className="mb-12">
-                <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+                <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
                   <h2 className="text-xl font-bold mb-1">01. 지원 분야 선택</h2>
                   <p className="text-slate-300">지원 분야 선택 <span className="text-red-400">*</span></p>
                 </div>
@@ -415,7 +415,7 @@ export default function ApplyPage() {
                       className="sr-only"
                       required
                     />
-                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-slate-800 has-[:checked]:text-white transition-all duration-300">
+                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-blue-100 has-[:checked]:text-blue-900 transition-all duration-300">
                       <div className="flex items-center mb-3">
                         <div className="w-10 h-10 bg-gradient-to-b from-orange-400 to-red-500 rounded-lg flex items-center justify-center mr-3 shadow-md">
                           <span className="text-white font-semibold">브</span>
@@ -436,7 +436,7 @@ export default function ApplyPage() {
                       className="sr-only"
                       required
                     />
-                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-slate-800 has-[:checked]:text-white transition-all duration-300">
+                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-blue-100 has-[:checked]:text-blue-900 transition-all duration-300">
                       <div className="flex items-center mb-3">
                         <div className="w-10 h-10 bg-gradient-to-b from-green-400 to-emerald-500 rounded-lg flex items-center justify-center mr-3 shadow-md">
                           <span className="text-white font-semibold">디</span>
@@ -457,7 +457,7 @@ export default function ApplyPage() {
                       className="sr-only"
                       required
                     />
-                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-slate-800 has-[:checked]:text-white transition-all duration-300">
+                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-blue-100 has-[:checked]:text-blue-900 transition-all duration-300">
                       <div className="flex items-center mb-3">
                         <div className="w-10 h-10 bg-gradient-to-b from-purple-400 to-indigo-500 rounded-lg flex items-center justify-center mr-3 shadow-md">
                           <span className="text-white font-semibold">분</span>
@@ -473,7 +473,7 @@ export default function ApplyPage() {
 
           {/* 지원자 정보 */}
           <section className="mb-12">
-            <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+            <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
               <h2 className="text-xl font-bold mb-1">02. 개인 정보</h2>
               <p className="text-slate-300">지원자 개인정보</p>
             </div>
@@ -658,7 +658,7 @@ export default function ApplyPage() {
 
           {/* 학력사항 */}
           <section className="mb-16">
-            <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+            <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
               <h2 className="text-xl font-bold mb-1">03. 학력 사항</h2>
               <p className="text-slate-300 font-light">학력사항 <span className="text-red-400">*</span></p>
             </div>
@@ -903,7 +903,7 @@ export default function ApplyPage() {
 
           {/* 제출 서류 */}
           <section className="mb-16">
-            <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+            <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
               <h2 className="text-xl font-bold mb-1">05. 제출 서류</h2>
               <p className="text-slate-300 font-light">제출 서류</p>
             </div>
@@ -988,7 +988,7 @@ export default function ApplyPage() {
 
           {/* 자기소개서 */}
           <section className="mb-16">
-            <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+            <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
               <h2 className="text-xl font-bold mb-1">04. 자기소개서</h2>
               <p className="text-slate-300 font-light">마케팅 자기소개서 <span className="text-red-400">*</span></p>
             </div>
@@ -998,7 +998,7 @@ export default function ApplyPage() {
               <ul className="text-slate-700 space-y-2 font-medium">
                 <li>• 마케팅 분야 지원 동기와 열정을 구체적으로 작성해주세요</li>
                 <li>• 관련 경험이나 프로젝트가 있다면 성과와 함께 설명해주세요</li>
-                <li>• 타이탄 마케팅 그룹에서 이루고 싶은 목표를 기술해주세요</li>
+                <li>• 스타쉽 마케팅 그룹에서 이루고 싶은 목표를 기술해주세요</li>
                 <li>• 데이터 기반 사고, 창의성, 소통능력 등 마케팅 역량을 어필해주세요</li>
               </ul>
             </div>
@@ -1010,7 +1010,7 @@ export default function ApplyPage() {
                   <p>1. 마케팅 분야에 관심을 갖게 된 계기는 무엇인가요?</p>
                   <p>2. 가장 인상 깊었던 마케팅 캠페인과 그 이유는?</p>
                   <p>3. 데이터와 창의성의 균형을 어떻게 잡으시나요?</p>
-                  <p>4. 타이탄 마케팅에서 어떤 기여를 하고 싶으신가요?</p>
+                  <p>4. 스타쉽 마케팅에서 어떤 기여를 하고 싶으신가요?</p>
                 </div>
               </div>
 
@@ -1027,7 +1027,7 @@ export default function ApplyPage() {
 - 마케팅 분야 지원 동기
 - 관련 경험 및 성과 (학교 프로젝트, 인턴십, 개인 프로젝트 등)
 - 창의적 사고와 데이터 분석 능력
-- 타이탄 마케팅에서의 목표와 비전
+- 스타쉽 마케팅에서의 목표와 비전
 - 팀워크 및 소통 능력
 
 ※ 이것은 테스트용이므로 실제 개인정보는 입력하지 마세요."
@@ -1047,13 +1047,13 @@ export default function ApplyPage() {
 
           {/* 지원 경로 */}
           <section className="mb-16">
-            <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+            <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
               <h2 className="text-xl font-bold mb-1">06. 지원 경로</h2>
               <p className="text-slate-300 font-light">지원 경로 <span className="text-red-400">*</span></p>
             </div>
             
             <div className="bg-slate-100 px-4 py-3 border-l-4 border-slate-600 mb-8">
-              <h3 className="font-black text-slate-800 tracking-tight">타이탄 마케팅을 어떻게 알게 되셨나요?</h3>
+              <h3 className="font-black text-slate-800 tracking-tight">스타쉽 마케팅을 어떻게 알게 되셨나요?</h3>
             </div>
             
             <select
@@ -1063,7 +1063,7 @@ export default function ApplyPage() {
               className="w-full px-6 py-4 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-600 transition-colors bg-white font-medium text-lg"
             >
               <option value="">지원 경로를 선택해주세요</option>
-              <option value="company-website">🌐 타이탄 마케팅 공식 홈페이지</option>
+              <option value="company-website">🌐 스타쉽 마케팅 공식 홈페이지</option>
               <option value="job-portal">💼 채용포털사이트 (잡코리아, 사람인 등)</option>
               <option value="linkedin">👔 LinkedIn</option>
               <option value="sns">📱 SNS (인스타그램, 페이스북 등)</option>
@@ -1076,7 +1076,7 @@ export default function ApplyPage() {
 
           {/* 개인정보 동의 */}
           <section className="mb-16">
-            <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+            <div className="bg-blue-100 text-blue-900 p-4 mb-6 rounded-lg border-l-4 border-blue-500">
               <h2 className="text-xl font-bold mb-1">07. 개인정보 동의</h2>
               <p className="text-slate-300 font-light">개인정보 처리 동의 (테스트용)</p>
             </div>
@@ -1118,7 +1118,7 @@ export default function ApplyPage() {
                   <div>
                     <span className="font-black text-slate-900 text-lg">개인정보 필수항목 수집 및 이용 동의 <span className="text-red-500">*</span></span>
                     <div className="mt-3 text-slate-700 font-medium">
-                      <p className="mb-2"><strong>타이탄 마케팅 그룹 (테스트)</strong>은 마케팅 채용 절차 진행을 위해 필요한 개인정보를 수집합니다.</p>
+                      <p className="mb-2"><strong>스타쉽 마케팅 그룹 (테스트)</strong>은 마케팅 채용 절차 진행을 위해 필요한 개인정보를 수집합니다.</p>
                       <div className="bg-slate-100 p-4 border-l-4 border-slate-600">
                         <p>• <strong>수집항목:</strong> 성명, 연락처, 이메일 등</p>
                         <p>• <strong>목적:</strong> 채용 심사, 결과 안내</p>
@@ -1173,7 +1173,7 @@ export default function ApplyPage() {
             <div className="text-center mb-12">
               <h4 className="text-2xl font-bold text-slate-900 mb-3">지원서 제출</h4>
               <p className="text-slate-600 font-light text-lg">
-                타이탄 마케팅 그룹의 마케팅 전문가로 함께 성장할 준비가 되셨나요?
+                스타쉽 마케팅 그룹의 마케팅 전문가로 함께 성장할 준비가 되셨나요?
               </p>
             </div>
 
@@ -1214,7 +1214,7 @@ export default function ApplyPage() {
                 DEMO SITE WARNING
               </p>
               <p className="text-red-200 font-medium">
-                이것은 데모 사이트입니다. 타이탄 마케팅은 가상의 회사이며, 입력된 정보는 어디에도 저장되지 않습니다.
+                이것은 데모 사이트입니다. 스타쉽 마케팅은 가상의 회사이며, 입력된 정보는 어디에도 저장되지 않습니다.
               </p>
             </div>
           </div>
