@@ -297,7 +297,7 @@ export default function ApplyPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <h2 className="text-4xl font-black text-slate-900 mb-8 tracking-tight">SUBMISSION COMPLETE</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">제출 완료</h2>
             <div className="bg-slate-100 p-6 border-l-4 border-green-500 mb-8">
               <p className="text-slate-700 font-medium text-lg leading-relaxed">{submitResult}</p>
             </div>
@@ -305,9 +305,9 @@ export default function ApplyPage() {
             <div className="space-y-4">
               <button
                 onClick={() => setSubmitResult(null)}
-                className="w-full bg-slate-900 text-white px-8 py-4 font-black tracking-wide hover:bg-slate-700 transition-colors border-4 border-slate-900 hover:border-slate-700 text-lg"
+                className="w-full bg-slate-800 text-white px-6 py-3 font-bold hover:bg-slate-700 transition-colors border-2 border-slate-800 hover:border-slate-700 rounded-lg"
               >
-                NEW APPLICATION TEST
+                새 지원서 테스트
               </button>
               
               <div className="bg-red-600 text-white p-4 border-2 border-red-700">
@@ -342,214 +342,214 @@ export default function ApplyPage() {
         🚨 테스트 전용 사이트 - 타이탄 마케팅은 가상의 회사입니다 | 실제 데이터 수집 없음 🚨
       </div>
 
-      {/* 헤더 */}
-      <header className="bg-black/30 backdrop-blur-sm shadow-2xl border-b border-white/10 relative z-10">
-        <div className="max-w-6xl mx-auto px-6 py-12">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <div className="w-16 h-16 bg-gradient-to-b from-slate-100 to-slate-300 flex items-center justify-center mr-6 shadow-lg">
-                <span className="text-slate-800 font-black text-2xl tracking-tight">TM</span>
-              </div>
-              <div>
-                <h1 className="text-3xl font-black text-white tracking-tight">TITAN MARKETING</h1>
-                <p className="text-slate-300 text-sm font-medium tracking-wide mt-1">APPLICATION FORM (TEST)</p>
+                {/* 헤더 */}
+          <header className="bg-black/20 backdrop-blur-sm shadow-lg border-b border-white/10 relative z-10">
+            <div className="max-w-6xl mx-auto px-6 py-8">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-b from-slate-100 to-slate-300 rounded-lg flex items-center justify-center mr-4 shadow-md">
+                    <span className="text-slate-800 font-bold text-lg">TM</span>
+                  </div>
+                  <div>
+                    <h1 className="text-2xl font-bold text-white">타이탄 마케팅</h1>
+                    <p className="text-slate-300 text-sm font-medium mt-1">지원서 (테스트)</p>
+                  </div>
+                </div>
+                <div className="text-right">
+                  <div className="bg-red-500/80 border border-red-400 rounded px-3 py-1">
+                    <span className="text-red-100 text-sm font-semibold">데모</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="text-right">
-              <div className="bg-red-600/90 border-2 border-red-500 px-4 py-2">
-                <span className="text-red-100 text-sm font-bold tracking-wide">DEMO</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+          </header>
 
       <div className="max-w-6xl mx-auto px-6 py-16 relative z-10">
-        {/* 지원 포지션 안내 */}
-        <div className="bg-black/40 backdrop-blur-sm border border-white/20 p-12 mb-16 shadow-2xl">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-black text-white mb-4 tracking-tight">MARKETING POSITIONS</h2>
-            <p className="text-slate-300 font-light text-lg">타이탄 마케팅 그룹 전문가 채용</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-1 border border-white/20">
-            <div className="bg-black/30 p-8 border-r border-white/10 hover:bg-black/50 transition-all group">
-              <div className="w-12 h-12 bg-gradient-to-b from-orange-400 to-red-500 flex items-center justify-center mb-6 shadow-lg">
-                <span className="text-white font-bold text-lg">B</span>
+                    {/* 지원 포지션 안내 */}
+            <div className="bg-black/30 backdrop-blur-sm border border-white/20 rounded-lg p-8 mb-12 shadow-lg">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold text-white mb-3">마케팅 직무</h2>
+                <p className="text-slate-300 text-base">타이탄 마케팅 그룹 전문가 채용</p>
               </div>
-              <h3 className="text-xl font-black text-white mb-2 tracking-tight">BRAND</h3>
-              <p className="text-slate-400 text-sm font-light">브랜드 전략 및 캠페인 기획</p>
-            </div>
-            <div className="bg-black/30 p-8 border-r border-white/10 hover:bg-black/50 transition-all group">
-              <div className="w-12 h-12 bg-gradient-to-b from-green-400 to-emerald-500 flex items-center justify-center mb-6 shadow-lg">
-                <span className="text-white font-bold text-lg">D</span>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 rounded-lg overflow-hidden border border-white/20">
+                <div className="bg-black/20 p-6 hover:bg-black/30 transition-all group">
+                  <div className="w-10 h-10 bg-gradient-to-b from-orange-400 to-red-500 rounded-lg flex items-center justify-center mb-4 shadow-md">
+                    <span className="text-white font-semibold">브</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">브랜드</h3>
+                  <p className="text-slate-400 text-sm">브랜드 전략 및 캠페인 기획</p>
+                </div>
+                <div className="bg-black/20 p-6 hover:bg-black/30 transition-all group border-l border-r border-white/10">
+                  <div className="w-10 h-10 bg-gradient-to-b from-green-400 to-emerald-500 rounded-lg flex items-center justify-center mb-4 shadow-md">
+                    <span className="text-white font-semibold">디</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">디지털</h3>
+                  <p className="text-slate-400 text-sm">퍼포먼스/SNS/검색 마케팅</p>
+                </div>
+                <div className="bg-black/20 p-6 hover:bg-black/30 transition-all group">
+                  <div className="w-10 h-10 bg-gradient-to-b from-purple-400 to-indigo-500 rounded-lg flex items-center justify-center mb-4 shadow-md">
+                    <span className="text-white font-semibold">분</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">분석</h3>
+                  <p className="text-slate-400 text-sm">데이터 분석 및 ROI 최적화</p>
+                </div>
               </div>
-              <h3 className="text-xl font-black text-white mb-2 tracking-tight">DIGITAL</h3>
-              <p className="text-slate-400 text-sm font-light">퍼포먼스/SNS/검색 마케팅</p>
             </div>
-            <div className="bg-black/30 p-8 hover:bg-black/50 transition-all group">
-              <div className="w-12 h-12 bg-gradient-to-b from-purple-400 to-indigo-500 flex items-center justify-center mb-6 shadow-lg">
-                <span className="text-white font-bold text-lg">A</span>
-              </div>
-              <h3 className="text-xl font-black text-white mb-2 tracking-tight">ANALYTICS</h3>
-              <p className="text-slate-400 text-sm font-light">데이터 분석 및 ROI 최적화</p>
-            </div>
-          </div>
-        </div>
 
-        <form onSubmit={handleSubmit} className="bg-white/98 backdrop-blur-sm shadow-2xl border border-white/30 p-12">
-          {/* 지원 분야 선택 */}
-          <section className="mb-16">
-            <div className="bg-slate-900 text-white p-6 mb-8 border-l-4 border-blue-500">
-              <h2 className="text-2xl font-black tracking-tight mb-2">01. POSITION SELECTION</h2>
-              <p className="text-slate-300 font-light">지원 분야 선택 <span className="text-red-400">*</span></p>
-            </div>
+                    <form onSubmit={handleSubmit} className="bg-white/95 backdrop-blur-sm shadow-lg border border-white/30 rounded-lg p-8">
+              {/* 지원 분야 선택 */}
+              <section className="mb-12">
+                <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+                  <h2 className="text-xl font-bold mb-1">01. 지원 분야 선택</h2>
+                  <p className="text-slate-300">지원 분야 선택 <span className="text-red-400">*</span></p>
+                </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-1 border-2 border-slate-300">
-              <label className="cursor-pointer group">
-                <input
-                  type="radio"
-                  name="marketingField"
-                  value="brand"
-                  onChange={(e) => handleInputChange('applicationPath', 'brand-marketing')}
-                  className="sr-only"
-                  required
-                />
-                <div className="border border-slate-200 p-8 hover:bg-slate-50 has-[:checked]:bg-slate-900 has-[:checked]:text-white transition-all duration-300">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-b from-orange-400 to-red-500 flex items-center justify-center mr-4 shadow-lg">
-                      <span className="text-white font-bold text-lg">B</span>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 rounded-lg overflow-hidden border border-slate-300">
+                  <label className="cursor-pointer group">
+                    <input
+                      type="radio"
+                      name="marketingField"
+                      value="brand"
+                      onChange={(e) => handleInputChange('applicationPath', 'brand-marketing')}
+                      className="sr-only"
+                      required
+                    />
+                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-slate-800 has-[:checked]:text-white transition-all duration-300">
+                      <div className="flex items-center mb-3">
+                        <div className="w-10 h-10 bg-gradient-to-b from-orange-400 to-red-500 rounded-lg flex items-center justify-center mr-3 shadow-md">
+                          <span className="text-white font-semibold">브</span>
+                        </div>
+                        <h3 className="text-base font-bold">브랜드</h3>
+                      </div>
+                      <h4 className="font-semibold mb-2 text-orange-500 group-has-[:checked]:text-orange-300">브랜드 마케팅</h4>
+                      <p className="text-sm text-slate-600 group-has-[:checked]:text-slate-300">브랜드 전략, 포지셔닝, CI/BI, 글로벌 브랜드 캠페인 기획</p>
                     </div>
-                    <h3 className="text-lg font-black tracking-tight">BRAND</h3>
-                  </div>
-                  <h4 className="font-bold mb-2 text-orange-500 group-has-[:checked]:text-orange-300">브랜드 마케팅</h4>
-                  <p className="text-sm text-slate-600 group-has-[:checked]:text-slate-300 font-light">브랜드 전략, 포지셔닝, CI/BI, 글로벌 브랜드 캠페인 기획</p>
-                </div>
-              </label>
+                  </label>
 
-              <label className="cursor-pointer group">
-                <input
-                  type="radio"
-                  name="marketingField"
-                  value="digital"
-                  onChange={(e) => handleInputChange('applicationPath', 'digital-marketing')}
-                  className="sr-only"
-                  required
-                />
-                <div className="border border-slate-200 p-8 hover:bg-slate-50 has-[:checked]:bg-slate-900 has-[:checked]:text-white transition-all duration-300">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-b from-green-400 to-emerald-500 flex items-center justify-center mr-4 shadow-lg">
-                      <span className="text-white font-bold text-lg">D</span>
+                  <label className="cursor-pointer group">
+                    <input
+                      type="radio"
+                      name="marketingField"
+                      value="digital"
+                      onChange={(e) => handleInputChange('applicationPath', 'digital-marketing')}
+                      className="sr-only"
+                      required
+                    />
+                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-slate-800 has-[:checked]:text-white transition-all duration-300">
+                      <div className="flex items-center mb-3">
+                        <div className="w-10 h-10 bg-gradient-to-b from-green-400 to-emerald-500 rounded-lg flex items-center justify-center mr-3 shadow-md">
+                          <span className="text-white font-semibold">디</span>
+                        </div>
+                        <h3 className="text-base font-bold">디지털</h3>
+                      </div>
+                      <h4 className="font-semibold mb-2 text-green-500 group-has-[:checked]:text-green-300">디지털 마케팅</h4>
+                      <p className="text-sm text-slate-600 group-has-[:checked]:text-slate-300">퍼포먼스 마케팅, SNS 마케팅, 검색광고, 콘텐츠 마케팅</p>
                     </div>
-                    <h3 className="text-lg font-black tracking-tight">DIGITAL</h3>
-                  </div>
-                  <h4 className="font-bold mb-2 text-green-500 group-has-[:checked]:text-green-300">디지털 마케팅</h4>
-                  <p className="text-sm text-slate-600 group-has-[:checked]:text-slate-300 font-light">퍼포먼스 마케팅, SNS 마케팅, 검색광고, 콘텐츠 마케팅</p>
-                </div>
-              </label>
+                  </label>
 
-              <label className="cursor-pointer group">
-                <input
-                  type="radio"
-                  name="marketingField"
-                  value="analytics"
-                  onChange={(e) => handleInputChange('applicationPath', 'marketing-analytics')}
-                  className="sr-only"
-                  required
-                />
-                <div className="border border-slate-200 p-8 hover:bg-slate-50 has-[:checked]:bg-slate-900 has-[:checked]:text-white transition-all duration-300">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-b from-purple-400 to-indigo-500 flex items-center justify-center mr-4 shadow-lg">
-                      <span className="text-white font-bold text-lg">A</span>
+                  <label className="cursor-pointer group">
+                    <input
+                      type="radio"
+                      name="marketingField"
+                      value="analytics"
+                      onChange={(e) => handleInputChange('applicationPath', 'marketing-analytics')}
+                      className="sr-only"
+                      required
+                    />
+                    <div className="border border-slate-200 rounded-lg p-6 hover:bg-slate-50 has-[:checked]:bg-slate-800 has-[:checked]:text-white transition-all duration-300">
+                      <div className="flex items-center mb-3">
+                        <div className="w-10 h-10 bg-gradient-to-b from-purple-400 to-indigo-500 rounded-lg flex items-center justify-center mr-3 shadow-md">
+                          <span className="text-white font-semibold">분</span>
+                        </div>
+                        <h3 className="text-base font-bold">분석</h3>
+                      </div>
+                      <h4 className="font-semibold mb-2 text-purple-500 group-has-[:checked]:text-purple-300">마케팅 애널리틱스</h4>
+                      <p className="text-sm text-slate-600 group-has-[:checked]:text-slate-300">데이터 분석, KPI 관리, 마케팅 ROI 최적화, 고객 분석</p>
                     </div>
-                    <h3 className="text-lg font-black tracking-tight">ANALYTICS</h3>
-                  </div>
-                  <h4 className="font-bold mb-2 text-purple-500 group-has-[:checked]:text-purple-300">마케팅 애널리틱스</h4>
-                  <p className="text-sm text-slate-600 group-has-[:checked]:text-slate-300 font-light">데이터 분석, KPI 관리, 마케팅 ROI 최적화, 고객 분석</p>
+                  </label>
                 </div>
-              </label>
-            </div>
           </section>
 
           {/* 지원자 정보 */}
-          <section className="mb-16">
-            <div className="bg-slate-900 text-white p-6 mb-8 border-l-4 border-blue-500">
-              <h2 className="text-2xl font-black tracking-tight mb-2">02. PERSONAL INFORMATION</h2>
-              <p className="text-slate-300 font-light">지원자 개인정보</p>
+          <section className="mb-12">
+            <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+              <h2 className="text-xl font-bold mb-1">02. 개인 정보</h2>
+              <p className="text-slate-300">지원자 개인정보</p>
             </div>
             
             {/* 기본 정보 */}
             <div className="mb-12">
-              <h3 className="text-lg font-bold text-slate-800 mb-8 bg-slate-100 px-4 py-3 border-l-4 border-slate-600">
+              <h3 className="text-lg font-semibold text-slate-800 mb-6 bg-slate-100 px-4 py-3 rounded border-l-4 border-slate-600">
                 기본 정보 <span className="text-red-500">*</span>
               </h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-3 tracking-wide">이름 <span className="text-red-500">*</span></label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">이름 <span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     required
                     value={formData.name}
                     onChange={(e) => handleInputChange('name', e.target.value)}
-                    className="w-full px-4 py-3 border-2 border-slate-300 focus:outline-none focus:border-slate-900 transition-colors bg-white font-medium"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-600 transition-colors bg-white font-medium"
                   />
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-3 tracking-wide">영문 이름 <span className="text-red-500">*</span></label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">영문 이름 <span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     required
                     placeholder="EX) Hong Gil Dong"
                     value={formData.englishName}
                     onChange={(e) => handleInputChange('englishName', e.target.value)}
-                    className="w-full px-4 py-3 border-2 border-slate-300 focus:outline-none focus:border-slate-900 transition-colors bg-white font-medium placeholder:text-slate-400"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-600 transition-colors bg-white font-medium placeholder:text-slate-400"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-3 tracking-wide">이메일 <span className="text-red-500">*</span></label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">이메일 <span className="text-red-500">*</span></label>
                   <input
                     type="email"
                     required
                     value={formData.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
-                    className="w-full px-4 py-3 border-2 border-slate-300 focus:outline-none focus:border-slate-900 transition-colors bg-white font-medium"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-600 transition-colors bg-white font-medium"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-3 tracking-wide">이메일 확인 <span className="text-red-500">*</span></label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">이메일 확인 <span className="text-red-500">*</span></label>
                   <input
                     type="email"
                     required
                     value={formData.emailConfirm}
                     onChange={(e) => handleInputChange('emailConfirm', e.target.value)}
-                    className="w-full px-4 py-3 border-2 border-slate-300 focus:outline-none focus:border-slate-900 transition-colors bg-white font-medium"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-600 transition-colors bg-white font-medium"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-3 tracking-wide">전화번호 <span className="text-red-500">*</span></label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">전화번호 <span className="text-red-500">*</span></label>
                   <input
                     type="tel"
                     required
                     placeholder="'-' 없이 입력해 주세요"
                     value={formData.phone}
                     onChange={(e) => handleInputChange('phone', e.target.value)}
-                    className="w-full px-4 py-3 border-2 border-slate-300 focus:outline-none focus:border-slate-900 transition-colors bg-white font-medium placeholder:text-slate-400"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-600 transition-colors bg-white font-medium placeholder:text-slate-400"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-3 tracking-wide">생년월일 <span className="text-red-500">*</span></label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">생년월일 <span className="text-red-500">*</span></label>
                   <input
                     type="date"
                     required
                     value={formData.birthDate}
                     onChange={(e) => handleInputChange('birthDate', e.target.value)}
-                    className="w-full px-4 py-3 border-2 border-slate-300 focus:outline-none focus:border-slate-900 transition-colors bg-white font-medium"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-600 transition-colors bg-white font-medium"
                   />
                 </div>
               </div>
@@ -635,7 +635,7 @@ export default function ApplyPage() {
                     required
                     value={formData.address}
                     onChange={(e) => handleInputChange('address', e.target.value)}
-                    className="flex-1 px-4 py-3 border-2 border-slate-300 focus:outline-none focus:border-slate-900 transition-colors bg-white font-medium"
+                    className="flex-1 px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-600 transition-colors bg-white font-medium"
                     placeholder="기본 주소"
                   />
                   <button
@@ -649,7 +649,7 @@ export default function ApplyPage() {
                   type="text"
                   value={formData.detailAddress}
                   onChange={(e) => handleInputChange('detailAddress', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-slate-300 focus:outline-none focus:border-slate-900 transition-colors bg-white font-medium placeholder:text-slate-400"
+                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-600 transition-colors bg-white font-medium placeholder:text-slate-400"
                   placeholder="상세 주소 (선택)"
                 />
               </div>
@@ -658,8 +658,8 @@ export default function ApplyPage() {
 
           {/* 학력사항 */}
           <section className="mb-16">
-            <div className="bg-slate-900 text-white p-6 mb-8 border-l-4 border-blue-500">
-              <h2 className="text-2xl font-black tracking-tight mb-2">03. EDUCATION</h2>
+            <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+              <h2 className="text-xl font-bold mb-1">03. 학력 사항</h2>
               <p className="text-slate-300 font-light">학력사항 <span className="text-red-400">*</span></p>
             </div>
             
@@ -903,14 +903,14 @@ export default function ApplyPage() {
 
           {/* 제출 서류 */}
           <section className="mb-16">
-            <div className="bg-slate-900 text-white p-6 mb-8 border-l-4 border-blue-500">
-              <h2 className="text-2xl font-black tracking-tight mb-2">05. DOCUMENTS</h2>
+            <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+              <h2 className="text-xl font-bold mb-1">05. 제출 서류</h2>
               <p className="text-slate-300 font-light">제출 서류</p>
             </div>
             
             <div className="space-y-12">
               <div>
-                <label className="block text-lg font-bold text-slate-800 mb-8 bg-slate-100 px-4 py-3 border-l-4 border-slate-600">
+                <label className="block text-lg font-semibold text-slate-800 mb-6 bg-slate-100 px-4 py-3 rounded border-l-4 border-slate-600">
                   포트폴리오 <span className="text-red-500">*</span>
                 </label>
                 <div className="border-2 border-slate-300 p-12 text-center bg-slate-50">
@@ -948,7 +948,7 @@ export default function ApplyPage() {
               </div>
 
               <div>
-                <label className="block text-lg font-bold text-slate-800 mb-8 bg-slate-100 px-4 py-3 border-l-4 border-slate-600">
+                <label className="block text-lg font-semibold text-slate-800 mb-6 bg-slate-100 px-4 py-3 rounded border-l-4 border-slate-600">
                   경력기술서 (선택)
                 </label>
                 <div className="border-2 border-slate-300 p-12 text-center bg-slate-50">
@@ -988,13 +988,13 @@ export default function ApplyPage() {
 
           {/* 자기소개서 */}
           <section className="mb-16">
-            <div className="bg-slate-900 text-white p-6 mb-8 border-l-4 border-blue-500">
-              <h2 className="text-2xl font-black tracking-tight mb-2">04. COVER LETTER</h2>
+            <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+              <h2 className="text-xl font-bold mb-1">04. 자기소개서</h2>
               <p className="text-slate-300 font-light">마케팅 자기소개서 <span className="text-red-400">*</span></p>
             </div>
             
             <div className="bg-slate-100 border-l-4 border-slate-600 p-6 mb-8">
-              <h4 className="font-black text-slate-900 mb-4 text-lg tracking-tight">WRITING GUIDE</h4>
+              <h4 className="font-bold text-slate-900 mb-3">작성 가이드</h4>
               <ul className="text-slate-700 space-y-2 font-medium">
                 <li>• 마케팅 분야 지원 동기와 열정을 구체적으로 작성해주세요</li>
                 <li>• 관련 경험이나 프로젝트가 있다면 성과와 함께 설명해주세요</li>
@@ -1005,7 +1005,7 @@ export default function ApplyPage() {
 
             <div className="space-y-8">
               <div className="bg-slate-50 border border-slate-300 p-6">
-                <h5 className="font-black text-slate-800 mb-4 tracking-tight">KEY QUESTIONS (참고용)</h5>
+                <h5 className="font-bold text-slate-800 mb-3">주요 질문 (참고용)</h5>
                 <div className="text-sm text-slate-600 space-y-2 font-light">
                   <p>1. 마케팅 분야에 관심을 갖게 된 계기는 무엇인가요?</p>
                   <p>2. 가장 인상 깊었던 마케팅 캠페인과 그 이유는?</p>
@@ -1020,7 +1020,7 @@ export default function ApplyPage() {
                 onChange={(e) => handleInputChange('coverLetter', e.target.value)}
                 rows={15}
                 maxLength={10000}
-                className="w-full px-6 py-4 border-2 border-slate-300 focus:outline-none focus:border-slate-900 transition-colors resize-none font-medium text-slate-800 bg-white"
+                className="w-full px-6 py-4 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-600 transition-colors resize-none font-medium text-slate-800 bg-white"
                 placeholder="마케팅 전문가로서의 역량과 열정을 자유롭게 작성해주세요...
 
 예시:
@@ -1047,8 +1047,8 @@ export default function ApplyPage() {
 
           {/* 지원 경로 */}
           <section className="mb-16">
-            <div className="bg-slate-900 text-white p-6 mb-8 border-l-4 border-blue-500">
-              <h2 className="text-2xl font-black tracking-tight mb-2">06. APPLICATION SOURCE</h2>
+            <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+              <h2 className="text-xl font-bold mb-1">06. 지원 경로</h2>
               <p className="text-slate-300 font-light">지원 경로 <span className="text-red-400">*</span></p>
             </div>
             
@@ -1060,7 +1060,7 @@ export default function ApplyPage() {
               required
               value={formData.applicationPath}
               onChange={(e) => handleInputChange('applicationPath', e.target.value)}
-              className="w-full px-6 py-4 border-2 border-slate-300 focus:outline-none focus:border-slate-900 transition-colors bg-white font-medium text-lg"
+              className="w-full px-6 py-4 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-600 transition-colors bg-white font-medium text-lg"
             >
               <option value="">지원 경로를 선택해주세요</option>
               <option value="company-website">🌐 타이탄 마케팅 공식 홈페이지</option>
@@ -1076,8 +1076,8 @@ export default function ApplyPage() {
 
           {/* 개인정보 동의 */}
           <section className="mb-16">
-            <div className="bg-slate-900 text-white p-6 mb-8 border-l-4 border-blue-500">
-              <h2 className="text-2xl font-black tracking-tight mb-2">07. PRIVACY AGREEMENT</h2>
+            <div className="bg-slate-800 text-white p-4 mb-6 rounded-lg border-l-4 border-blue-500">
+              <h2 className="text-xl font-bold mb-1">07. 개인정보 동의</h2>
               <p className="text-slate-300 font-light">개인정보 처리 동의 (테스트용)</p>
             </div>
             
@@ -1169,9 +1169,9 @@ export default function ApplyPage() {
           </section>
 
           {/* 제출 버튼 */}
-          <div className="bg-slate-100 border-2 border-slate-300 p-12 mt-16">
+          <div className="bg-slate-100 border border-slate-300 rounded-lg p-8 mt-12">
             <div className="text-center mb-12">
-              <h4 className="text-3xl font-black text-slate-900 mb-4 tracking-tight">SUBMIT APPLICATION</h4>
+              <h4 className="text-2xl font-bold text-slate-900 mb-3">지원서 제출</h4>
               <p className="text-slate-600 font-light text-lg">
                 타이탄 마케팅 그룹의 마케팅 전문가로 함께 성장할 준비가 되셨나요?
               </p>
@@ -1181,7 +1181,7 @@ export default function ApplyPage() {
               <button
                 type="submit"
                 disabled={isSubmitting || !agreements.essential || !agreements.sensitive}
-                className={`px-16 py-6 font-black text-white text-xl tracking-wide transition-all duration-300 border-4 ${
+                className={`px-12 py-4 font-bold text-white text-lg transition-all duration-300 border-2 rounded-lg ${
                   isSubmitting || !agreements.essential || !agreements.sensitive
                     ? 'bg-gray-400 border-gray-400 cursor-not-allowed'
                     : 'bg-slate-900 border-slate-900 hover:bg-slate-700 hover:border-slate-700 hover:shadow-2xl'
@@ -1200,7 +1200,7 @@ export default function ApplyPage() {
                     <svg className="w-8 h-8 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                     </svg>
-                    SUBMIT APPLICATION (TEST)
+                    지원서 제출 (테스트)
                   </div>
                 )}
               </button>
