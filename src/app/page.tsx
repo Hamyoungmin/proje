@@ -1,103 +1,165 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800 relative overflow-hidden">
+      {/* 테스트 사이트 워터마크 */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 left-20 text-red-500/15 text-5xl font-light transform -rotate-45 tracking-wider">
+          TEST ONLY
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="absolute bottom-20 right-20 text-red-500/15 text-5xl font-light transform rotate-45 tracking-wider">
+          DEMO SITE
+        </div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-red-500/8 text-7xl font-light tracking-widest">
+          TESTING
+        </div>
+      </div>
+      
+      {/* 테스트 사이트 경고 배너 */}
+      <div className="bg-red-600 text-white py-2 px-6 text-center font-medium text-sm shadow-sm relative z-10 border-b border-red-700">
+        🚨 테스트 전용 데모 사이트 | 실제 채용이 아닙니다 | 개인정보 수집 없음 🚨
+      </div>
+
+      <div className="container mx-auto px-6 py-20 relative z-10 max-w-7xl">
+        {/* 헤더 로고 영역 */}
+        <div className="text-center mb-24">
+          <div className="inline-flex items-center bg-black/20 backdrop-blur-sm border border-white/10 p-8 mb-12">
+            <div className="w-20 h-20 bg-gradient-to-b from-slate-100 to-slate-300 flex items-center justify-center mr-6 shadow-lg">
+              <span className="text-slate-800 font-black text-3xl tracking-tight">TM</span>
+            </div>
+            <div className="text-left">
+              <h1 className="text-4xl font-black text-white tracking-tight">TITAN MARKETING</h1>
+              <p className="text-slate-300 text-sm font-medium tracking-widest mt-1">GROUP</p>
+            </div>
+          </div>
+          
+          <h2 className="text-5xl md:text-7xl font-black text-white mb-8 tracking-tight leading-tight">
+            MARKETING
+            <br />
+            <span className="text-slate-300">PROFESSIONALS</span>
+          </h2>
+          <p className="text-lg text-slate-300 mb-16 max-w-4xl mx-auto leading-relaxed font-light">
+            글로벌 마케팅 리더십을 구축하는 타이탄 마케팅 그룹에서 
+            <br className="hidden md:block" />
+            혁신적이고 창의적인 마케팅 전문가를 모집합니다.
+            <br />
+            <span className="text-red-400 font-medium text-sm mt-4 block">※ 데모용 테스트 사이트 - 실제 채용이 아닙니다</span>
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Link
+              href="/apply"
+              className="group inline-flex items-center px-10 py-4 bg-white text-slate-900 font-bold tracking-wide border-2 border-white hover:bg-slate-900 hover:text-white hover:border-slate-300 transition-all duration-300 shadow-2xl"
+            >
+              <svg className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              APPLY NOW (TEST)
+            </Link>
+            
+            <button className="group inline-flex items-center px-10 py-4 bg-transparent text-white font-medium tracking-wide border-2 border-white/30 hover:border-white hover:bg-white/5 transition-all duration-300">
+              <svg className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              TEST GUIDE
+            </button>
+          </div>
+        </div>
+
+        {/* 채용 분야 소개 */}
+        <div className="mt-32 grid grid-cols-1 md:grid-cols-3 gap-1 border border-white/20 shadow-2xl">
+          <div className="bg-black/40 backdrop-blur-sm p-8 border-r border-white/10 hover:bg-black/60 transition-all duration-300 group">
+            <div className="w-16 h-16 bg-gradient-to-b from-orange-400 to-red-500 flex items-center justify-center mb-6 shadow-lg group-hover:scale-105 transition-transform">
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-black text-white mb-4 tracking-tight">BRAND</h3>
+            <h4 className="text-lg font-bold text-orange-400 mb-3">브랜드 마케팅</h4>
+            <p className="text-slate-300 font-light leading-relaxed">전략적 브랜드 포지셔닝, CI/BI 개발, 글로벌 캠페인 기획을 통한 브랜드 가치 극대화</p>
+          </div>
+
+          <div className="bg-black/40 backdrop-blur-sm p-8 border-r border-white/10 hover:bg-black/60 transition-all duration-300 group">
+            <div className="w-16 h-16 bg-gradient-to-b from-green-400 to-emerald-500 flex items-center justify-center mb-6 shadow-lg group-hover:scale-105 transition-transform">
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-black text-white mb-4 tracking-tight">DIGITAL</h3>
+            <h4 className="text-lg font-bold text-green-400 mb-3">디지털 마케팅</h4>
+            <p className="text-slate-300 font-light leading-relaxed">퍼포먼스 마케팅, SNS 전략, 검색광고, 콘텐츠 마케팅 등 디지털 채널 전문가</p>
+          </div>
+
+          <div className="bg-black/40 backdrop-blur-sm p-8 hover:bg-black/60 transition-all duration-300 group">
+            <div className="w-16 h-16 bg-gradient-to-b from-purple-400 to-indigo-500 flex items-center justify-center mb-6 shadow-lg group-hover:scale-105 transition-transform">
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-black text-white mb-4 tracking-tight">ANALYTICS</h3>
+            <h4 className="text-lg font-bold text-purple-400 mb-3">마케팅 애널리틱스</h4>
+            <p className="text-slate-300 font-light leading-relaxed">데이터 분석 기반 ROI 최적화, 고객 인사이트 발굴, KPI 성과 관리 전문가</p>
+          </div>
+        </div>
+
+        {/* 테스트 사이트 중요 알림 */}
+        <div className="mt-24 bg-red-600/90 backdrop-blur-sm border-2 border-red-500 p-12">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <svg className="w-16 h-16 text-red-200 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
+              </svg>
+              <h3 className="text-3xl font-black text-white mb-2 tracking-tight">DEMO SITE WARNING</h3>
+              <p className="text-red-200 font-medium">테스트 전용 사이트 - 실제 채용이 아닙니다</p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+              <div className="bg-black/30 p-6 border border-red-400/30">
+                <div className="text-red-200 font-bold text-lg mb-2">가상 회사</div>
+                <p className="text-red-100 text-sm">"타이탄 마케팅"은 실제 회사가 아닙니다</p>
+              </div>
+              <div className="bg-black/30 p-6 border border-red-400/30">
+                <div className="text-red-200 font-bold text-lg mb-2">데모 목적</div>
+                <p className="text-red-100 text-sm">테스트 및 포트폴리오 용도로만 사용</p>
+              </div>
+              <div className="bg-black/30 p-6 border border-red-400/30">
+                <div className="text-red-200 font-bold text-lg mb-2">정보 수집 없음</div>
+                <p className="text-red-100 text-sm">모든 입력 데이터는 저장되지 않음</p>
+              </div>
+              <div className="bg-black/30 p-6 border border-red-400/30">
+                <div className="text-red-200 font-bold text-lg mb-2">검색 차단</div>
+                <p className="text-red-100 text-sm">검색엔진에 노출되지 않음</p>
+              </div>
+            </div>
+            
+            <div className="mt-8 text-center">
+              <p className="text-yellow-200 font-medium">
+                실제 마케팅 채용을 원하시면 관심 기업의 공식 채용 페이지를 이용해주세요.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 회사 정보 (가상) */}
+        <div className="mt-20 border-t border-white/20 pt-16">
+          <div className="text-center text-slate-400">
+            <div className="bg-black/20 border border-white/10 p-8 max-w-2xl mx-auto">
+              <h4 className="text-xl font-black text-white mb-6 tracking-wide">TITAN MARKETING GROUP</h4>
+              <div className="space-y-2 text-sm font-light">
+                <p>서울시 강남구 테헤란로 000 타이탄빌딩 12층 (00000)</p>
+                <p>TEL: 02-0000-0000 | EMAIL: recruit@titan-marketing-test.com</p>
+                <div className="border-t border-white/10 mt-4 pt-4">
+                  <p className="text-red-400 font-medium text-xs">
+                    ※ 위 정보는 모두 테스트용 가상 정보입니다
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
